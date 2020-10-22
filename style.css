@@ -1,0 +1,132 @@
+@font-face{
+    font-family: 'Bebas';
+    src: url('./fonts/BebasNeue-Regular.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf')  format('truetype');
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    border: 10px solid #ebebeb;
+    width: 360px;
+    height:400px;
+}
+
+.content__license {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.license {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    padding: 0 15px;
+
+}
+.license__container{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    width: 115px;
+
+}
+
+.license__radio{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border: 3.5px solid #dbdbdb;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    
+}
+.license__radio:checked{
+    border: 3.5px solid #3a6991;
+    background: radial-gradient(
+          #0294bf 35%,
+          #ebf4f7 40%,
+          #ebf4f7 86%,
+          #0294bf 85%
+        );
+}
+.license__title {
+    font-family: 'Bebas', sans-serif;
+    color: #787878;
+    font-size: 17px;
+}
+.license__description {
+    color: #7d7d7d;
+    font-size: 10px;
+}
+.license.license_active {
+    background-color: #ebf4f7;
+    border: 1px solid #bcd9e3;
+}
+
+.content__separator {
+    width: 90%;
+    height: 0.1px;
+    color: rgba(218, 218, 218, 0.816);
+    padding: 0;
+}
+.content__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter__text {
+    margin: 0 10px;
+    font-size: 12px;
+}
+.counter__select {
+}
+.content__payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:45%;
+}
+.payment__text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Bebas', sans-serif;
+    font-size: 20px;
+}
+.payment__text_gray {
+    color: #777777;
+    margin: 0 5px;
+}
+.payment__text_blue {
+    color: #3388a8;
+    font-weight: 600;
+}
+.payment__text_blue.payment__text_small {
+    font-size: 14px;
+}
+.payment__button {
+    background-color: #33a845;
+    width: auto;
+    padding: 10px 45px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+.payment__selected-license {
+    color: #3f8eac;
+    font-size: 14px;
+}

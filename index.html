@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="content__license">
+            <div class="license  license_active">
+                <div class="license__container ">
+                    <input class="license__radio" type="radio" name='radio_select'>
+                    <div class="license__title">LICENSEPLAN#1</div>
+                </div>
+                <div class="license__description">$13 per license</div>
+            </div>
+            <div class="license">
+                <div class="license__container">
+                    <input class="license__radio" type="radio" name='radio_select'>
+                    <div class="license__title">LICENSEPLAN#2</div>
+                </div>
+                <div class="license__description">$22 per license</div>
+            </div>
+            <div class="license">
+                <div class="license__container">
+                    <input  class="license__radio" type="radio" name='radio_select'>
+                    <div class="license__title">LICENSEPLAN#3</div>
+                </div>
+                <div class="license__description">$34 per license</div>
+            </div>
+        </div>
+
+        <hr class="content__separator">
+        <div class="content__counter">
+            <div class="counter__text">Number of licenses</div>
+            <select name="counter" id="counter" class="counter__select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <hr class="content__separator">
+        <div class="content__payment">
+            <div class="payment__text">
+                <div class="payment__text_gray">TOTAL: </div>
+                <div class="payment__text_blue payment__total">$340</div>
+                <div class="payment__text_blue payment__text_small">US</div>
+            </div>
+            <div class="payment__button">BUY NOW</div>
+            <div class="payment__selected-license">Selected plan: #3</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
